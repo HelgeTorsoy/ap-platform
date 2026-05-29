@@ -2,7 +2,7 @@
 
 > Interactive prototype for an AI-assisted invoice processing platform at Aker BP.  
 > 28 iterations. 17 screens. Specialized AI agents. Built to replace manual AP workflows with confidence-scored, human-in-the-loop automation.
-
+**[→ Live demo](https://helgetorsoy.github.io/ap-platform/)**
 ---
 
 ## What This Is
