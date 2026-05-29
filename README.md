@@ -1,13 +1,13 @@
 # AP Platform — AI-Native Accounts Payable
 
 > Interactive prototype for an AI-assisted invoice processing platform at Aker BP.  
-> 28 iterations. 17 screens. Specialized AI agents. Built to replace manual AP workflows with confidence-scored, human-in-the-loop automation.
+> 28 iterations. 17 screens. 5 specialized AI agents. Built to replace manual AP workflows with confidence-scored, human-in-the-loop automation.
 **[→ Live demo](https://helgetorsoy.github.io/ap-platform/)**
 ---
 
 ## What This Is
 
-A fully interactive prototype for a next-generation accounts payable platform designed for Aker BP's finance department. The platform replaces fragmented SAP GUI workflows with a unified, AI-native cockpit where four specialized agents handle invoice coding, PO matching, exception triage, and vendor communication — with humans entering the loop only when AI confidence falls below configurable thresholds.
+A fully interactive prototype for a next-generation accounts payable platform designed for Aker BP's finance department. The platform replaces fragmented SAP GUI workflows with a unified, AI-native cockpit where five specialized agents handle invoice coding, PO matching, exception triage, and vendor communication — with humans entering the loop only when AI confidence falls below configurable thresholds.
 
 This is a prototype. Every screen is functional — invoices can be opened, coded, matched, approved, and posted. The AI agents respond to user actions. The confidence model updates in real time. The vendor portal has its own login flow and dashboard.
 
@@ -27,12 +27,12 @@ I designed and built this prototype end-to-end as a Senior Digital Finance Analy
 The platform is designed as **cloud-agnostic, container-native, and decoupled from SAP**:
 
 Key design decisions:
-- **Multi-agent over monolithic** — four purpose-built agents collaborating through a shared event bus, each learning independently
+- **Multi-agent over monolithic** — five purpose-built agents collaborating through a shared event bus, each learning independently
 - **Confidence-first** — every AI prediction carries a confidence score; only predictions above the threshold auto-post
 - **Shadow mode** — agents run in parallel with human decisions before going autonomous, building trust through measurable accuracy
 - **SAP-decoupled** — reads/writes to SAP via OData APIs, but the platform's logic lives outside the ERP
 
-## The Four Agents
+## The Five Agents
 
 | Agent | Purpose | Key Behavior |
 |-------|---------|-------------|
